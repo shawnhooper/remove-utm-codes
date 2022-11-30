@@ -13,7 +13,16 @@ Remove UTM Codes from all links in posts
 
 == Description ==
 
+After installing this plugin, run:
+
+wp remove-utm-codes
+
+If you want to do a dry-run to see what the plugin would do before changing your data, run:
+
+wp remove-utm-codes --dry-run
+
 == Changelog ==
 
 = 0.1.0 =
-*
+* Remove links from all posts on the site
+* Include dry-run functionality
