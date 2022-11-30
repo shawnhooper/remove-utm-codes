@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:     Remove UTM Codes from Links in Posts
+ * Plugin Name:     Remove UTM Codes
  * Plugin URI:      https://github.com/shawnhooper/remove-utm-codes
- * Description:     Remove UTM codes from links in WordPress posts
+ * Description:     Adds a WP-CLI command that removes UTM codes from links in your posts
  * Author:          Shawn M. Hooper
  * Author URI:      https://shawnhooper.ca/
  * Text Domain:     remove-utm-codes
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  *
  * @package         Remove_UTM_Codes
  */
@@ -17,8 +17,6 @@ namespace ShawnHooper\RemoveUTMCodes;
 use WP_CLI;
 
 class RemoveUTMCodes {
-
-	private ?bool $has_tweets = null;
 
 	/**
 	 * Hook this plugin into WordPress' actions & filters

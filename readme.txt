@@ -5,15 +5,17 @@ Tags: UTM, bulk, wp-cli, import
 Requires at least: 6.0.0
 Tested up to: 6.1
 Requires PHP: 7.4.0
-Stable tag: 0.1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Remove UTM Codes from all links in posts
+This plugin adds a WP-CLI command that removes UTM codes from all links in your post content.
 
 == Description ==
 
-After installing this plugin, run:
+This plugin adds a WP-CLI command that removes UTM codes from all links in your post content.
+
+After installing and activating this plugin, run:
 
 wp remove-utm-codes
 
@@ -23,6 +25,6 @@ wp remove-utm-codes --dry-run
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Remove links from all posts on the site
 * Include dry-run functionality
