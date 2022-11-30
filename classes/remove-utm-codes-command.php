@@ -34,7 +34,8 @@ class Remove_UTM_Command {
            'posts_per_page' => -1,
         ]);
 
-        WP_CLI::line("Found {count($posts} posts");
+        $count = count($posts);
+        WP_CLI::line("Found {$count} posts");
 
         foreach($posts as $post) {
             $this->removeUTMFromPost($post);
@@ -50,6 +51,13 @@ class Remove_UTM_Command {
 
         foreach($links as $link) {
             $stripped = $this->stripUTM($link);
+
+            if ( $link[0] === $stripped ) {
+                WP_CLI::line("Link {$link[0]} does not contain any UTM codes.  Skipping");
+                continue;
+            }
+
+
             if ( $this->dry_run) {
                 WP_CLI::line("Dry Run: Would replace {$link[0]} with $stripped");
             } else {
