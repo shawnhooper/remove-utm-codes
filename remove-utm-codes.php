@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Remove UTM Codes
+ * Plugin Name:     Remove UTM Codes (WP-CLI Command)
  * Plugin URI:      https://github.com/shawnhooper/remove-utm-codes
  * Description:     Adds a WP-CLI command that removes UTM codes from links in your posts
  * Author:          Shawn M. Hooper
